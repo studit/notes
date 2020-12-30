@@ -10,6 +10,10 @@
 
     <link href="../styles.css" rel="stylesheet">
 
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <title>Good Enough to Eat</title>
   </head>
   <body>
@@ -68,10 +72,76 @@
           <a class="btn btn-lg btn-primary" href="./index.html" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
           </svg> Back To Overview</a>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p><b>Density (\(\rho\))</b> is the mass per unit volume, or:</p>
+          <p>\(\rho=\frac{m}{V}\)</p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p>A <b>fluid</b> is any substance that can flow.</p>
+          <p><b>Upthrust</b> is the upwards force on an object when submerged in a fluid.</p>
+          <p><b>Archimedes' Principle</b> states that upthrust \(=\) weight of fluid displaced.</p>
+          <p>If an object is completely submerged in a fluid, then the volume of fluid displaced is equal to the volume of the object, so you can find the mass of displaced fluid using \(m=\rho V\), and then the weight of the displaced fluid (the <b>upthrust</b>) using \(W=mg\).</p>
+          <p>An object will float if <b>upthrust</b> and weight are equal. So, for an object to float, it must sink until it has displaced its own weight of fluid.</p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p><b>Viscosity</b> describes how resistant a fluid is to flowing. Roughly speaking, the lower the viscosity of a fluid, the runnier it is. Viscosity is temperature dependent.</p>
+          <p><b>Stokes' Law</b> states that:</p>
+          <p>\(F=6\pi\eta rv\)</p>
+          <p>Where \(F\) is the viscous drag force, \(\eta\) is the viscosity of the fluid, \(r\) is the radius of the sphere and \(v\) is the velocity of the sphere.</p>
+          <p><b>Stokes' Law</b> only applies to small, spherical objects travelling at low speeds with <b>laminar flow</b>.</p>
+          <p><b>Laminar flow</b> is streamlined, and the fluid does not abruptly change in direction or speed. On the other hand, with <b>turbulent flow</b>, there is a lot of mixing and a series of little whirlpools are produced along the object's path.</p>
+        </div>
+        <br>
+        <div class="bg-info p-5 rounded">
+          <p class="h5">CORE PRACTICAL 4: Use a falling-ball method to determine the viscosity of a liquid.</p>
+          <p><b>Diagram:</b></p>
+          <p><b>Method:</b></p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p><b>Hooke's law</b> states that, up to the <b>limit of proportionality</b>:</p>
+          <p>\(\Delta F=k\Delta x\)</p>
+          <p>Where \(\Delta F\) is the force applied, \(k\) is the spring constant, and \(\Delta x\) is the extension.</p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p>For a <b>stiff</b> material, a large force produces a small deformation.</p>
+          <p>A <b>strong</b> material requires a large force to break.</p>
+          <p><b>Elastic deformation</b> is when a material is stretched and then released, and returns to its original form.</p>
+          <p>On the other hand, with <b>plastic deformation</b>, the material does not return to its original form.</p>
+          <p>On a <b>force-extension graph</b>, the <b>limit of proportionality</b> is the point at which the graph stops being linear.</p>
+          <p>The <b>elastic limit</b> is the maximum force that can be applied to an object without <b>plastic deformation</b> occurring.</p>
+          <p>The <b>yield point</b> is the point on a <b>force-extension graph</b> at which a material begins to rapidly extend for little increase in force.</p>
+          <p>The larger the gradient of a <b>force-extension graph</b>, the larger the stiffness.</p>
+          <p>The larger the force at the <b>breaking point</b>, the stronger the object.</p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p>The <b>refractive index (\(n\))</b> of a material is a measure of how much light will refract by.</p>
+          <p>\(n=\frac{c}{v}\)</p>
+          <p>Where \(c\) is the speed of light in a vacuum (\(3\times 10^{8}\,ms^{-1}\)) and \(v\) is the speed of light in the material.</p>
+          <p><b>Snell's law</b> states that at the interface between medium 1 and medium 2:</p>
+          <p>\(n_{1}\sin\theta_{1}=n_{2}\sin\theta_{2}\)</p>
+          <img src="snells-law.png" class="img-fluid" alt="light ray being refracted">
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
 
         </div>
-
-        
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p>A wave is <b>unpolarised</b> if it's oscillations are not confined to a particular plane.</p>
+          <p>A wave is <b>plane polarised</b> if it only has oscillations in one plane (for an electromagnetic wave, the plane of the electric field's oscillations is what determines the <b>plane of polarisation</b>).</p>
+          <p>Only <b>transverse waves</b> can be <b>plane polarised</b>.</p>
+          <p>A <b>polarising filter</b> only transmits waves <b>polarised</b> to a certain plane.</p>
+          <p><b>Polarising filters</b> perpendicular to each other will let no light through.</p>
+          <img src="plane-polarisation-small.png" class="img-fluid" alt="wave and polarising filters">
+        </div>
+        <br>
       </main>
 
 
