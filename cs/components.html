@@ -77,11 +77,35 @@
           <p>The <b>Control Unit (CU)</b> decodes instructions, sends signals to co-ordinate the operations of the processor, synchronises the flow of data around the CPU, and manages the execution of instructions.</p>
           <p>The <b>Program Counter (PC)</b> stores the address of the next instruction to be executed. Its value is sent to the <b>MAR</b> and is then incremented by one.</p>
           <p>The <b>Accumulator (ACC)</b> stores the results of calculations carried out by the <b>ALU</b>.</p>
-          <p>The <b>Memory Address Register (MAR)</b> stores the address of the next location in memory to be read from or written to.</p>
+          <p>The <b>Memory Address Register (MAR)</b> stores the address of the next location in memory to be read from or written to, e.g. the address of the next instruction, copied from the <b>PC</b>.</p>
+          <p>The <b>Memory Data Register (MDR)</b> temporarily holds data that has been read from / is to be written to main memory, acting as a buffer, e.g. stores the instruction held at the address specified in the <b>MAR</b> (copied from the <b>PC</b>), and copies it to the <b>CIR</b>.</p>
+          <p>The <b>Current Instruction Register (CIR)</b> hold the instruction currently being decoded / executed. The instruction is split into an <b>opcode</b> (what operation to carry out) and an <b>operand</b> (the data / the location of the data to carry out the operation on).</p>
+          <p>A <b>bus</b> is a set of parallel wires connecting two or more components of a computer.</p>
+          <p>The <b>data bus</b> carries data between the processor and main memory. It is bi-directional.</p>
+          <p>The <b>address bus</b> carries the address of the memory location being read from or written to.</p>
+          <p>The <b>control bus</b> transmits control signals from the <b>CU</b> to synchronise / manage the operations of the processor.</p>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>The stages of the <b>fetch-decode-execute (FDE) cycle</b> are:</p>
+          <p><b>Fetch:</b></p>
+          <ul>
+            <li>The address of the next instruction is copied from the <b>PC</b> to the <b>MAR</b>.</li>
+            <li>The address of the next instruction is placed on the <b>address bus</b> and the <b>CU</b> instructs a memory read operation.</li>
+            <li>The instruction stored at that address is transferred from main memory to the processor via the <b>data bus</b>, and stored in the <b>MDR</b>.</li>
+            <li>Simultaneously, the contents of the <b>PC</b> are incremented by one, so that it contains the address of the next instruction to be fetched.</li>
+            <li>The contents of the <b>MDR</b> are copied to the <b>CIR</b>.</li>
+          </ul>
+          <p><b>Decode:</b></p>
+          <ul>
+            <li>The <b>CU</b> decodes the instruction held in the <b>CIR</b>.</li>
+            <li>The instruction is split into an <b>opcode</b>, to determine the type of instruction, and an <b>operand</b>, to determine what data to carry the operation out on. Any additional data (if needed) is fetched from main memory.</li>
+          </ul>
+          <p><b>Execute:</b></p>
+          <ul>
+            <li>The appropriate instruction is carried out on the operand.</li>
+          </ul>
+          <p>The cycle is then repeated.</p>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
