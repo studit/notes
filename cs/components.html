@@ -119,7 +119,107 @@
         </div>
         <br>
         <div class="bg-light p-5 rounded">
+          <p>With <b>pipelining</b>, whilst one instruction is being executed, another can be decoded, and another can be fetched. This allows instructions to be executed more quickly, improving processor performance.</p>
+          <p>However, programs that involve lots of branching may not benefit from <b>pipelining</b> so much, since the wrong instructions may be fetched or decoded, meaning the pipeline would need to be <b>flushed</b>.</p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p>In <b>von Neumann architecture</b>, both data and instructions are stored in the same memory unit, and are accessed using the same bus.</p>
+          <p>On the other hand, in <b>Harvard architecture</b>, data and instructions are held in separate memory units, and are accessed using different buses.</p>
+          <table class="table table-sm table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" style="width: 50%">von Neumann</th>
+                <th scope="col" style="width: 50%">Harvard</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Used in general purpose PCs</td>
+                <td>Used in digital signal processing, microcontrollers and embedded systems</td>
+              </tr>
+              <tr>
+                <td>One bus for data and instructions is a bottleneck</td>
+                <td>Separate buses allow for parallel access to data and instructions</td>
+              </tr>
+              <tr>
+                <td>One bus allows for a simpler (and therefore cheaper) control unit</td>
+                <td>Control unit for two buses is more complex and expensive</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><b>Contemporary processor architectures</b> often incorporate aspects of both von Neumann and Harvard architectures.</p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <table class="table table-sm table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" style="width: 50%">RISC (Reduced Instruction Set Computer)</th>
+                <th scope="col" style="width: 50%">CISC (Complex Instruction Set Computer)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Small instruction set</td>
+                <td>Larger instruction set</td>
+              </tr>
+              <tr>
+                <td>Only very simple instructions are available</td>
+                <td>Instructions that perform complex tasks are available</td>
+              </tr>
+              <tr>
+                <td>Simple processor design</td>
+                <td>Complex processor design</td>
+              </tr>
+              <tr>
+                <td>Hardware is cheaper</td>
+                <td>Hardware is more expensive</td>
+              </tr>
+              <tr>
+                <td>Consumes less power</td>
+                <td>Consumes more power</td>
+              </tr>
+              <tr>
+                <td>Instructions take the same number of clock cycles to execute</td>
+                <td>Instructions take varying numbers of clock cycles to execute</td>
+              </tr>
+              <tr>
+                <td>Pipelining is possible</td>
+                <td>Pipelining is not possible</td>
+              </tr>
+              <tr>
+                <td>Programs run quicker</td>
+                <td>Programs run slower</td>
+              </tr>
+              <tr>
+                <td>Code is longer, and so requires more RAM to store instructions</td>
+                <td>Code is relatively short, so very little RAM is required to store the instructions</td>
+              </tr>
+              <tr>
+                <td>Used in laptops and PCs</td>
+                <td>Used in digital signal processing, embedded systems and microcontrollers</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p>A <b>Graphics Processing Unit (GPU)</b> consists of thousands of small efficient cores designed for parallel processing. They are good at performing the same instruction on many pieces of data at once.</p>
+          <p>This means that <b>GPUs</b> are suitable for many things, such as: graphics processing, data mining, machine learning, audio processing, modelling physical systems and financial transactions.</p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p><b>Parallel processing</b> is when multiple computations are carried out simultaneously.</p>
+          <p><b>Multicore</b> processors have multiple cores on a single chip so that the workload can be distributed across multiple cores in order to improve performance.</p>
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
 
+        </div>
+        <br>
+        <div class="bg-light p-5 rounded">
+          <p></p>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
@@ -130,19 +230,6 @@
 
         </div>
         <br>
-        <div class="bg-light p-5 rounded">
-
-        </div>
-        <br>
-        <div class="bg-light p-5 rounded">
-
-        </div>
-        <br>
-        <div class="bg-light p-5 rounded">
-
-        </div>
-        <br>
-        
       </main>
 
 
