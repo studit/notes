@@ -88,18 +88,50 @@
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-          <p><b>Viscosity</b> describes how resistant a fluid is to flowing. Roughly speaking, the lower the viscosity of a fluid, the runnier it is. Viscosity is temperature dependent.</p>
+          <p><b>Viscosity</b> describes how resistant a fluid is to flowing. Roughly speaking, the lower the viscosity of a fluid, the runnier it is.</p>
+          <p>Viscosity is temperature dependent - the higher the temperature of a liquid, the lower its viscosity.</p>
           <p><b>Stokes' Law</b> states that:</p>
           <p>\(F=6\pi\eta rv\)</p>
           <p>Where \(F\) is the viscous drag force, \(\eta\) is the viscosity of the fluid, \(r\) is the radius of the sphere and \(v\) is the velocity of the sphere.</p>
           <p><b>Stokes' Law</b> only applies to small, spherical objects travelling at low speeds with <b>laminar flow</b>.</p>
-          <p><b>Laminar flow</b> is streamlined, and the fluid does not abruptly change in direction or speed. On the other hand, with <b>turbulent flow</b>, there is a lot of mixing and a series of eddies are produced along the object's path.</p>
+          <p><b>Laminar flow</b> is streamlined; the fluid does not abruptly change in direction or speed, and the layers do not mix. On the other hand, with <b>turbulent flow</b>, there is a lot of mixing and a series of eddies are present.</p>
         </div>
         <br>
         <div class="bg-info p-5 rounded">
           <p class="h5">CORE PRACTICAL 4: Use a falling-ball method to determine the viscosity of a liquid.</p>
+          <br>
           <p><b>Diagram:</b></p>
+          <img src="core-practical-6.png" class="img-fluid" alt="measuring cylinder with fluid and ball inside">
+          <p></p>
+          <br>
           <p><b>Method:</b></p>
+          <ol>
+            <li>Set up equipment as shown in the diagram.</li>
+            <li>Using a micrometer, measure the diameter of the ball.</li>
+            <li>Using an electric balance, measure the mass of the ball.</li>
+            <li>Using a ruler, measure the distance between the two markers.</li>
+            <li>Drop the ball into the liquid.</li>
+            <li>Start a stopwatch when the ball reaches the first marker, and stop it when it reaches the second marker.</li>
+            <li>Remove the ball from the tube using a strong magnet.</li>
+            <li>Repeat this multiple times for the same ball.</li>
+            <li>Then, repeat this for different size balls.</li>
+          </ol>
+          <br>
+          <p><b>Analysis:</b></p>
+          <p>To find the radius of each ball, half its diameter.</p>
+          <p>To find the velocity of each ball, divide the distance between each marker by the time taken to move between the markers.</p>
+          <p>At terminal velocity, the forces on the ball will be balanced:</p>
+          <p><img src="ball-forces.png" class="img-fluid" alt="forces acting on ball"></p>
+          <p>\(Weight = Upthrust + Viscous\,Drag\)</p>
+          <p>\(m_{b}g = m_{f}g + 6\pi r\eta v\)</p>
+          <p>\(\rho_{b}V_{b}g = \rho_{f}V_{b}g + 6\pi r\eta v\)</p>
+          <p>\(\rho_{b}V_{b}g - \rho_{f}V_{b}g = 6\pi r\eta v\)</p>
+          <p>\(V_{b}g(\rho_{b}-\rho_{f}) = 6\pi r\eta v\)</p>
+          <p>\(\frac{4}{3}\pi r^{3}g(\rho_{b}-\rho_{f}) = 6\pi r\eta v\)</p>
+          <p>\(\frac{4}{3} r^{2}g(\rho_{b}-\rho_{f}) = 6 \eta v\)</p>
+          <p>\(2 r^{2}g(\rho_{b}-\rho_{f}) = 9 \eta v\)</p>
+          <p>\(\eta = \frac{2 r^{2}g(\rho_{b}-\rho_{f})}{9 v}\)</p>
+          <p>Where \(m_{b}\) is the mass of the ball, \(m_{f}\) is the mass of the fluid, \(r\) is the radius of the ball, \(\eta\) is the viscosity of the fluid, \(v\) is the radius of the ball, \(\rho_{b}\) is the density of the ball, \(\rho_{f}\) is the density of the fluid, \(V_{b}\) is the volume of the ball and \(g\) is the acceleration due to gravity.</p>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
