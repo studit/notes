@@ -72,35 +72,82 @@
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>Some examples of the functions of an <b>operating system</b> are:</p>
+          <ul>
+            <li><b>Processor scheduling</b> - determining the order in which processes are executed, in order to provide an acceptable response time for all processes, and maximise the time the CPU is fully engaged.</li>
+            <li><b>Interrupt handling</b> - allowing processor time to be reallocated to a higher priority process to make the maximum use of processor time, deal with errors, and ensure that each user in a multi user system gets a fair share of processor time.</li>
+            <li><b>Memory management</b> - keeping track of how memory is divided and identified to ensure that memory is allocated efficiently between running processes.</li>
+            <li><b>Secondary storage management</b> - keeping track of where files and programs are stored, which parts are free, and managing permissions.</li>
+            <li><b>I/O device management</b> - allowing efficient communication with devices and managing functionality issues.</li>
+            <li><b>Providing a user interface</b> - allows the user to interact with the computer and receive the information that it processes, hiding the complexity of the hardware.</li>
+            <li><b>Providing security</b> - ensures resources are protected from unauthorised access through the use of permissions and authentication.</li>
+            <li><b>Providing a platform for software to run</b> - allows the user to run applications.</li>
+            <li><b>Providing utilities</b> - software which performs a specific task related to the upkeep of the system, e.g. a disk defragmenter.</li>
+          </ul>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>The OS must: track the status of memory allocation (marking address spaces as either allocated or free), determine storage requirements (working out how much memory to allocate to each running process), and control memory usage (managing swapping between main and virtual memory).</p>
+          <p>With <b>paging</b>, memory is divided into fixed-sized chunks called pages. Pages can be stored in a non-contiguous manner, i.e. pages of the same process do not have to be stored physically next to each other. A page table maps between the physical and logical memory locations.</p>
+          <p>With <b>segmentation</b>, memory is</p>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>An <b>interrupt</b> is a signal sent to the processor, indicating that a device / process requires attention. Interrupts have different priorities, and a higher priority interrupt can interrupt a lower priority one.</p>
+          <p>Interrupts are needed so that processor time can be allocated to processes that are considered urgent. Reasons a processor may be interrupted include:</p>
+          <ul>
+            <li>A hardware failure has occurred and needs to be addressed.</li>
+            <li>A certain amount of time has expired and an action needs to be performed.</li>
+            <li>An I/O operation has completed.</li>
+            <li>An error has occurred in a program.</li>
+            <li>A power failure has occurred.</li>
+            <li>A printer has run out of paper.</li>
+          </ul>
+          <p>An <b>interrupt service routine (ISR)</b> is a small program that has been designed to respond to an interrupt's request.</p>
+          <p>If an interrupt is raised, the following happens:</p>
+          <ol>
+            <li>The processor finishes the current fetch-decode-execute cycle.</li>
+            <li>If the interrupt is of a lower or equal priority to the currently running process, then the current process continues.</li>
+            <li>Otherwise, the contents of the CPU's registers are pushed onto a stack in memory.</li>
+            <li>The location of the start of the appropriate ISR is loaded into the program counter.</li>
+            <li>Once the ISR has completed, the previous contents of the registers are popped from the stack and loaded back into the registers.</li>
+          </ol>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>CPU time is allocated to different processes using <b>scheduling</b>. By carrying out small parts of multiple larger tasks in turn, the processor can give the appearance of carrying out several tasks simultaneously. Schedulers use different algorithms, such as:</p>
+          <ul>
+            <li><b>Round robin</b> - each job gets a fixed time slice.</li>
+            <li><b>First come first served</b> - the first job to arrive is processed until completion, and then the next, etc.</li>
+            <li><b>Shortest job first</b> - The quickest job to complete is processed first.</li>
+            <li><b>Shortest remaining time</b> - The job with the shortest time to completion is processed first, but can be taken over by a shorter job.</li>
+            <li><b>Multi-level feedback queue</b> - Jobs are placed in different queues depending on their priority. If a job uses too much CPU time, it is moved to a lower priority queue, and if a job has waited a long time, it can be moved to a higher priority queue.
+              </li>
+          </ul>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>There are many different types of OS, including:</p>
+          <ul>
+            <li><b>Distributed</b> - </li>
+            <li><b>Embedded</b> - </li>
+            <li><b>Multitasking</b> - </li>
+            <li><b>Multi-user</b> - </li>
+            <li><b>Real time</b> - </li>
+          </ul>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>The <b>BIOS (Basic Input Output System)</b> is stored in ROM. It is used to initialise & test system hardware, and to load the OS into RAM.</p>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>A <b>device driver</b> is a piece of software that controls a hardware device, providing an interface between the device and the OS.</p>
+          <p>It would not be possible for an OS to be programmed to handle all existing and future devices, and so drivers are needed to allow the OS to interact with hardware devices, without knowing the specifics of them.</p>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
-
+          <p>A <b>virtual machine</b> is a piece of software that behaves in the same way as an actual computer.</p>
         </div>
         <br>
         <div class="bg-light p-5 rounded">
